@@ -22,10 +22,10 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"
-                android:layout_marginRight="35dp"
                 android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="20dp"
                 android:background="@color/blue_light"
                 android:backgroundTint="@color/blue_light"
                 android:clipChildren="false"
@@ -72,7 +72,7 @@
                             android:layout_height="wrap_content"
                             android:hint="ARTIST NAME">
 
-                            <com.google.android.material.textfield.TextInputEditText
+                            <EditText
                                 android:id="@+id/edit_text_artist_name"
                                 style="Theme.LyricsFindingApp"
                                 android:layout_width="match_parent"
@@ -91,7 +91,7 @@
                             android:layout_marginTop="8dp"
                             android:hint="SONG NAME">
 
-                            <com.google.android.material.textfield.TextInputEditText
+                            <EditText
                                 android:id="@+id/edit_text_song_name"
                                 style="Theme.LyricsFindingApp"
                                 android:layout_width="match_parent"
@@ -112,8 +112,8 @@
                             android:fontFamily="sans-serif-black"
                             android:paddingTop="20dp"
                             android:paddingBottom="20dp"
-                            android:textAllCaps="false"
                             android:text="Get The Lyrics"
+                            android:textAllCaps="false"
                             android:textColor="#FFFFFF"
                             android:textSize="16sp" />
 
