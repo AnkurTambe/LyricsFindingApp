@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
                     Intent lyricsActivityIntent = new Intent(MainActivity.this, LyricActivity.class);
                     lyricsActivityIntent.putExtra("Artist", aname);
                     lyricsActivityIntent.putExtra("Song", sname);
-
                     startActivity(lyricsActivityIntent);
                 }
             }

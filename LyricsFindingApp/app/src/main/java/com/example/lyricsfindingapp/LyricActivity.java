@@ -44,6 +44,8 @@ public class LyricActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), "Searching.....", Toast.LENGTH_SHORT).show();
 
         if (isOnline()) {
+
+            Toast.makeText(getApplicationContext(), artistName + "^" + songName, Toast.LENGTH_SHORT).show();
             url = "https://api.lyrics.ovh/v1/" + artistName + "/" + songName;
             url.replaceAll(" ", "%20");
 
