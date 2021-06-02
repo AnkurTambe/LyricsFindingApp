@@ -9,22 +9,32 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:resizeableActivity="false"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LyricsFindingApp">
         <activity
             android:name=".SocialActivity"
+            android:configChanges="orientation|screenSize"
             android:label="Social Media"
-            android:parentActivityName=".KnowActivity" />
+            android:parentActivityName=".KnowActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".KnowActivity"
+            android:configChanges="orientation|screenSize"
             android:label="Know More"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".LyricActivity"
+            android:configChanges="orientation|screenSize"
             android:label="Song Lyrics"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
